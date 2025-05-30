@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 16px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+h1 { font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: $primary-color;
+  }
+}
+
+h3 { font-size: 1.5rem; }
+
+p {
+  margin-bottom: 16px;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.3s;
+  list-style: none;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}

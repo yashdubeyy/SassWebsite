@@ -1,0 +1,58 @@
+.card, .price-card {
+  background-color: $bg-color;
+  border-radius: 4px;
+  padding: 24px;
+  @include hover-lift;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    color: $primary-color;
+    margin-bottom: 8px;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: $primary-color;
+  }
+
+  &.featured {
+    transform: scale(1.05);
+    border: 2px solid $primary-color;
+    z-index: 1;
+
+    @media (min-width: 768px) {
+      margin-top: -16px;
+      margin-bottom: -16px;
+    }
+  }
+}
+
+.price-card {
+  text-align: center;
+
+  .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 16px 0;
+  }
+
+  ul {
+    margin: 24px 0;
+
+    li {
+      margin-bottom: 8px;
+      padding-left: 16px;
+      position: relative;
+      list-style: none;
+
+      &::before {
+        content: "✓";
+        color: $secondary-color;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}

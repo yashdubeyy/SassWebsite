@@ -1,0 +1,22 @@
+section {
+  padding: 32px 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  &.features, &.pricing, &.contact {
+    background-color: white;
+  }
+
+  .feature-cards, .price-cards {
+    display: grid;
+    gap: 24px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

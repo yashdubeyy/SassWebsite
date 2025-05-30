@@ -1,66 +1,94 @@
-SASS Website Template
+# SASS Website Template
+
 A simple, responsive website template built with HTML and SASS/SCSS.
 
-📋 Overview
-This project demonstrates how to structure and organize a website using SASS (Syntactically Awesome Style Sheets) to create maintainable and modular CSS. It follows the 7-1 architecture using traditional @import syntax.
+## 📋 Overview
 
-🚀 Features
-Clean, responsive layout
+This project demonstrates how to structure and organize a website using SASS (Syntactically Awesome Style Sheets) to create maintainable and modular CSS. It follows the 7-1 pattern for SASS architecture.
 
-Modular SCSS file structure
+## 🚀 Features
 
-Mobile-first design approach
+- Clean, responsive design
+- Modular SCSS file structure
+- Mobile-first approach
+- Easily customizable with variables
+- No images used - perfect for learning fundamentals
 
-Fully customizable with variables
+## 🛠️ Tech Stack
 
-No images — focused on layout and core CSS concepts
+- HTML5
+- SASS/SCSS (with 7-1 architecture)
+- Node.js (for SASS compilation)
 
-🛠️ Tech Stack
-HTML5
 
-SCSS (SASS using @import)
+## ⚙️ Installation
 
-VS Code or any text editor
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yashdubeyy/SassWebsite.git
+   cd SassWebsite
+   ```
 
-A SCSS compiler (e.g., Live Sass Compiler extension for VS Code)
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-⚙️ Setup
-Clone the repository:
+## 🖥️ Usage
 
-bash
-Copy
-Edit
-git clone https://github.com/yashdubeyy/SassWebsite.git
-cd SassWebsite
-Open the project in VS Code (or any editor you prefer).
+### Development Mode
 
-Compile SCSS to CSS using one of the following methods:
+To work on the project with automatic SASS compilation:
 
-Recommended: Install the Live Sass Compiler extension in VS Code.
+```bash
+npm run sass:watch
+```
 
-Click “Watch Sass” at the bottom of VS Code to automatically compile .scss to .css.
+This will start a watch process that automatically compiles SCSS to CSS whenever changes are made.
 
-Start editing HTML and SCSS files as needed.
+### Build for Production
 
-✏️ Customizing
-Update colors, fonts, and spacing in scss/abstracts/_variables.scss
+To generate a minified CSS file for production:
 
-Add/edit components in scss/components/
+```bash
+npm run sass:compressed
+```
 
-Create new page styles in scss/pages/
+### One-time Compilation
 
-🔧 Live Preview
-For real-time preview while editing:
+To compile SCSS to CSS once:
 
-Install the Live Server extension in VS Code.
+```bash
+npm run sass
+```
 
-Right-click index.html → Open with Live Server.
+## 📝 Customizing
 
-Compile SCSS in the background with Live Sass Compiler.
+1. Colors, fonts, and other global variables can be modified in `scss/abstracts/_variables.scss`
+2. Component styles are in their respective files under `scss/components/`
+3. Page-specific styles should go in `scss/pages/`
 
-🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-Feel free to check the issues page.
+## 🛠️ Working with VS Code
 
-👨‍💻 Author
-GitHub: @yashdubeyy
+For the best experience with VS Code:
+
+1. Install these recommended extensions:
+   - Live Server
+   - SASS
+   - Prettier - Code formatter
+
+2. Use Live Server to preview your changes:
+   - Right-click on `index.html`
+   - Select "Open with Live Server"
+
+3. Keep the SASS watcher running:
+   - Open a terminal in VS Code (Ctrl+`)
+   - Run `npm run sass:watch`
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yashdubeyy/SassWebsite/issues).
+
+## 👨‍💻 Author
+
+- GitHub: [@yashdubeyy](https://github.com/yashdubeyy)
